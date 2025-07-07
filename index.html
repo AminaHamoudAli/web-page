@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Summer Camp Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1> Summer Camp Registration</h1>
+    <form>
+      <label for="q">Full Name of Child</label>
+      <input type="text" placeholder="Enter child's name" id="q" required />
+
+      <label>Age</label>
+      <input type="number" min="1" max="15" placeholder="Age" required />
+
+      <div class="gender">
+        <label>
+            <input type="radio" name="gender" /> Male 
+        </label>
+        <label><input type="radio" name="gender" /> Female</label>
+      </div>
+
+      <label>Full Name of Parent/Guardian</label>
+      <input type="text" placeholder="Enter parent's name" required />
+
+      <label>Email</label>
+      <input type="email" placeholder="example@email.com" required />
+
+      <label>Start Date of Camp</label>
+      <input type="date" required />
+
+      <label>Preferred Activities</label>
+      <div class="activities">
+        <label><input type="checkbox" /> Swimming</label>
+        <label><input type="checkbox" /> Art</label>
+        <label><input type="checkbox" /> Drama</label>
+        <label><input type="checkbox" /> Soccer</label>
+      </div>
+
+      <label for="a"">Activity Level 
+        <div class="aa">
+            <input id="a" type="range" min="1" max="10" / >
+        </div>
+        </label>
+
+      <label>Medical Information</label>
+      <textarea placeholder="..."></textarea>
+
+      <label>Upload Photo of Child</label>
+      <input type="file" placeholder="" />
+
+      <div class="buttons">
+        <button type="submit"> Submit</button>
+        <button type="reset"> Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
